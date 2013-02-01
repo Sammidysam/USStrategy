@@ -5,8 +5,10 @@ public class StateHelper {
 		State state = null;
 		switch (id){
 			case 0:
-				state = new Texas();
-//				though 0 will not be Texas's id
+				state = new Alabama();
+				break;
+			default:
+				System.out.println(id + " causing trouble");
 				break;
 		}
 		return state;
@@ -15,8 +17,10 @@ public class StateHelper {
 		State state = null;
 		switch (name){
 			case "Texas":
-				state = new Texas();
-//				though 0 will not be Texas's id
+				state = new Alabama();
+				break;
+			default:
+				System.out.println(name + " causing trouble");
 				break;
 		}
 		return state;
