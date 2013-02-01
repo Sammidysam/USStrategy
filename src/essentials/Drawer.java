@@ -11,7 +11,7 @@ public class Drawer {
 		g.drawString("Hello!", 500, 2);
 		try {
 			StateHelper.getState(0).getFlag().draw(0, 0, 0.5F);
-			StateHelper.getState("Texas").getFlag().draw(0 + (StateHelper.getState(0).getFlag().getWidth() * 0.5F), 0 + (StateHelper.getState(0).getFlag().getHeight() * 0.5F), 0.5F);
+			StateHelper.getState("Arkansas").getFlag().draw(0 + (StateHelper.getState(0).getFlag().getWidth() * 0.5F), 0 + (StateHelper.getState(0).getFlag().getHeight() * 0.5F), 0.5F);
 		} catch (SlickException e) {
 			e.printStackTrace();
 		}
