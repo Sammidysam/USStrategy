@@ -44,10 +44,11 @@ public class StateHelper {
 	public static final int TEXAS = 40;
 	public static final int UTAH = 41;
 	public static final int VERMONT = 42;
-	public static final int WASHINGTON = 43;
-	public static final int WEST_VIRGINIA = 44;
-	public static final int WISCONSIN = 45;
-	public static final int WYOMING = 46;
+	public static final int VIRGINIA = 43;
+	public static final int WASHINGTON = 44;
+	public static final int WEST_VIRGINIA = 45;
+	public static final int WISCONSIN = 46;
+	public static final int WYOMING = 47;
 	public static State getState(int id){
 		State state = null;
 		switch (id){
@@ -65,6 +66,15 @@ public class StateHelper {
 				break;
 			case COLORADO:
 				state = new Colorado();
+				break;
+			case CONNECTICUT:
+				state = new Connecticut();
+				break;
+			case DELAWARE:
+				state = new Delaware();
+				break;
+			case FLORIDA:
+				state = new Florida();
 				break;
 			default:
 				System.out.println(id + " causing trouble");
