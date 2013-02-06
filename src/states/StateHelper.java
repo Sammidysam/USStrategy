@@ -76,6 +76,126 @@ public class StateHelper {
 			case FLORIDA:
 				state = new Florida();
 				break;
+			case GEORGIA:
+				state = new Georgia();
+				break;
+			case IDAHO:
+				state = new Idaho();
+				break;
+			case ILLINOIS:
+				state = new Illinois();
+				break;
+			case INDIANA:
+				state = new Indiana();
+				break;
+			case IOWA:
+				state = new Iowa();
+				break;
+			case KANSAS:
+				state = new Kansas();
+				break;
+			case KENTUCKY:
+				state = new Kentucky();
+				break;
+			case LOUISIANA:
+				state = new Louisiana();
+				break;
+			case MAINE:
+				state = new Maine();
+				break;
+			case MARYLAND:
+				state = new Maryland();
+				break;
+			case MASSACHUSETTS:
+				state = new Massachusetts();
+				break;
+			case MICHIGAN:
+				state = new Michigan();
+				break;
+			case MINNESOTA:
+				state = new Minnesota();
+				break;
+			case MISSISSIPPI:
+				state = new Mississippi();
+				break;
+			case MISSOURI:
+				state = new Missouri();
+				break;
+			case MONTANA:
+				state = new Montana();
+				break;
+			case NEBRASKA:
+				state = new Nebraska();
+				break;
+			case NEVADA:
+				state = new Nevada();
+				break;
+			case NEW_HAMPSHIRE:
+				state = new NewHampshire();
+				break;
+			case NEW_JERSEY:
+				state = new NewJersey();
+				break;
+			case NEW_MEXICO:
+				state = new NewMexico();
+				break;
+			case NEW_YORK:
+				state = new NewYork();
+				break;
+			case NORTH_CAROLINA:
+				state = new NorthCarolina();
+				break;
+			case NORTH_DAKOTA:
+				state = new NorthDakota();
+				break;
+			case OHIO:
+				state = new Ohio();
+				break;
+			case OKLAHOMA:
+				state = new Oklahoma();
+				break;
+			case OREGON:
+				state = new Oregon();
+				break;
+			case PENNSYLVANIA:
+				state = new Pennsylvania();
+				break;
+			case RHODE_ISLAND:
+				state = new RhodeIsland();
+				break;
+			case SOUTH_CAROLINA:
+				state = new SouthCarolina();
+				break;
+			case SOUTH_DAKOTA:
+				state = new SouthDakota();
+				break;
+			case TENNESSEE:
+				state = new Tennessee();
+				break;
+			case TEXAS:
+				state = new Texas();
+				break;
+			case UTAH:
+				state = new Utah();
+				break;
+			case VERMONT:
+				state = new Vermont();
+				break;
+			case VIRGINIA:
+				state = new Virginia();
+				break;
+			case WASHINGTON:
+				state = new Washington();
+				break;
+			case WEST_VIRGINIA:
+				state = new WestVirginia();
+				break;
+			case WISCONSIN:
+				state = new Wisconsin();
+				break;
+			case WYOMING:
+				state = new Wyoming();
+				break;
 			default:
 				System.out.println(id + " causing trouble");
 				break;
@@ -99,6 +219,135 @@ public class StateHelper {
 				break;
 			case "Colorado":
 				state = new Colorado();
+				break;
+			case "Connecticut":
+				state = new Connecticut();
+				break;
+			case "Delaware":
+				state = new Delaware();
+				break;
+			case "Florida":
+				state = new Florida();
+				break;
+			case "Georgia":
+				state = new Georgia();
+				break;
+			case "Idaho":
+				state = new Idaho();
+				break;
+			case "Illinois":
+				state = new Illinois();
+				break;
+			case "Indiana":
+				state = new Indiana();
+				break;
+			case "Iowa":
+				state = new Iowa();
+				break;
+			case "Kansas":
+				state = new Kansas();
+				break;
+			case "Kentucky":
+				state = new Kentucky();
+				break;
+			case "Louisiana":
+				state = new Louisiana();
+				break;
+			case "Maine":
+				state = new Maine();
+				break;
+			case "Maryland":
+				state = new Maryland();
+				break;
+			case "Massachusetts":
+				state = new Massachusetts();
+				break;
+			case "Michigan":
+				state = new Michigan();
+				break;
+			case "Minnesota":
+				state = new Minnesota();
+				break;
+			case "Mississippi":
+				state = new Mississippi();
+				break;
+			case "Missouri":
+				state = new Missouri();
+				break;
+			case "Montana":
+				state = new Montana();
+				break;
+			case "Nebraska":
+				state = new Nebraska();
+				break;
+			case "Nevada":
+				state = new Nevada();
+				break;
+			case "New Hampshire":
+				state = new NewHampshire();
+				break;
+			case "New Jersey":
+				state = new NewJersey();
+				break;
+			case "New Mexico":
+				state = new NewMexico();
+				break;
+			case "New York":
+				state = new NewYork();
+				break;
+			case "North Carolina":
+				state = new NorthCarolina();
+				break;
+			case "North Dakota":
+				state = new NorthDakota();
+				break;
+			case "Ohio":
+				state = new Ohio();
+				break;
+			case "Oklahoma":
+				state = new Oklahoma();
+				break;
+			case "Oregon":
+				state = new Oregon();
+				break;
+			case "Pennsylvania":
+				state = new Pennsylvania();
+				break;
+			case "Rhode Island":
+				state = new RhodeIsland();
+				break;
+			case "South Carolina":
+				state = new SouthCarolina();
+				break;
+			case "South Dakota":
+				state = new SouthDakota();
+				break;
+			case "Tennessee":
+				state = new Tennessee();
+				break;
+			case "Texas":
+				state = new Texas();
+				break;
+			case "Utah":
+				state = new Utah();
+				break;
+			case "Vermont":
+				state = new Vermont();
+				break;
+			case "Virginia":
+				state = new Virginia();
+				break;
+			case "Washington":
+				state = new Washington();
+				break;
+			case "West Virginia":
+				state = new WestVirginia();
+				break;
+			case "Wisconsin":
+				state = new Wisconsin();
+				break;
+			case "Wyoming":
+				state = new Wyoming();
 				break;
 			default:
 				System.out.println(name + " causing trouble");

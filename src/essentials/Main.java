@@ -46,7 +46,7 @@ public class Main implements Game {
 	}
 	public void init(GameContainer gc) throws SlickException {
 		gc.setTargetFrameRate(60);
-		gc.setMaximumLogicUpdateInterval(20);
+		gc.setMaximumLogicUpdateInterval(50);
 //		Minecraft updates 20 times per second, so let's do that here
 	}
 	public void render(GameContainer gc, Graphics g) throws SlickException {
