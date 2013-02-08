@@ -10,12 +10,14 @@ import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.Game;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
-import org.newdawn.slick.Input;
 import org.newdawn.slick.SlickException;
+
+import states.Secedation;
 
 public class Main implements Game {
 	private static boolean fullscreen;
 	private Drawer drawer = new Drawer();
+	private Updater updater = new Updater();
 	public static void main(String[] args){
 		System.setProperty("org.lwjgl.librarypath", new File(new File(System.getProperty("user.dir"), "native"), LWJGLUtil.getPlatformName()).getAbsolutePath());
 		System.setProperty("net.java.games.input.librarypath", System.getProperty("org.lwjgl.librarypath"));
@@ -47,16 +49,17 @@ public class Main implements Game {
 	public void init(GameContainer gc) throws SlickException {
 		gc.setTargetFrameRate(60);
 		gc.setMaximumLogicUpdateInterval(50);
-//		Minecraft updates 20 times per second, so let's do that here
+		Secedation secede = new Secedation();
+		System.out.println(secede.getLeavingState().getName());
 	}
 	public void render(GameContainer gc, Graphics g) throws SlickException {
 		drawer.draw(gc, g);
 	}
 	public void update(GameContainer gc, int j) throws SlickException {
-		Input input = gc.getInput();
-		if(input.isKeyDown(Input.KEY_ESCAPE))
-			gc.exit();
-//		if(j > 18)
-//			System.out.println("Can't keep up!");
+		updater.update(gc, j);
+		if(updater.getLag())
+			drawer.setLag(true);
+		else
+			drawer.setLag(false);
 	}
 }

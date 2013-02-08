@@ -10,4 +10,7 @@ public class State {
 	public Image getFlag() throws SlickException{
 		return new Image("res/flags/" + getName() + ".png");
 	}
+	public int getSecedeProbability(){
+		return Integer.MAX_VALUE;
+	}
 }
