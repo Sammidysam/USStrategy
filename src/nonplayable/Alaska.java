@@ -1,5 +1,6 @@
 package nonplayable;
 
-public class Alaska {
+public class Alaska extends NonPlayable {
+
 
 }

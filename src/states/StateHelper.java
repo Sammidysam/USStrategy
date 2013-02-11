@@ -204,7 +204,7 @@ public class StateHelper {
 	}
 	public static State getState(String name){
 		State state = null;
-		switch (name){
+		switch(name){
 			case "Alabama":
 				state = new Alabama();
 				break;
