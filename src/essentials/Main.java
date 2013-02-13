@@ -12,7 +12,7 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 
-import states.Secedation;
+import states.Secede;
 
 public class Main implements Game {
 	private static boolean fullscreen;
@@ -49,7 +49,7 @@ public class Main implements Game {
 	public void init(GameContainer gc) throws SlickException {
 		gc.setTargetFrameRate(60);
 		gc.setMaximumLogicUpdateInterval(50);
-		Secedation secede = new Secedation();
+		Secede secede = new Secede();
 		System.out.println(secede.getLeavingState().getName());
 	}
 	public void render(GameContainer gc, Graphics g) throws SlickException {

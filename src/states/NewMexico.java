@@ -4,7 +4,7 @@ public class NewMexico extends State {
 	public String getName(){
 		return "New Mexico";
 	}
-	public int getSecedeProbablility(){
+	public int getSecedeProbability(){
 		return 5;
 	}
 }

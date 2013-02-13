@@ -2,10 +2,10 @@ package states;
 
 import java.util.Random;
 
-public class Secedation {
+public class Secede {
 	private State[] state = new State[48];
 	private Random rand = new Random();
-	public Secedation(){
+	public Secede(){
 		for(int i = 0; i < 48; i++)
 			state[i] = StateHelper.getState(i);
 	}
