@@ -19,6 +19,8 @@ public class Updater {
 			overMax = 0;
 		if(overMax > 10)
 			lag = true;
+		else
+			lag = false;
 	}
 	public boolean getLag(){
 		return lag;
