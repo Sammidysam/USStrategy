@@ -10,6 +10,8 @@ import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.Game;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.KeyListener;
+import org.newdawn.slick.MouseListener;
 import org.newdawn.slick.SlickException;
 
 import states.Secede;
@@ -18,6 +20,8 @@ public class Main implements Game {
 	private static boolean fullscreen;
 	private Drawer drawer = new Drawer();
 	private Updater updater = new Updater();
+	private Keyboard keyboard = new Keyboard();
+	private Mouse mouse = new Mouse();
 	public static void main(String[] args){
 		System.setProperty("org.lwjgl.librarypath", new File(new File(System.getProperty("user.dir"), "native"), LWJGLUtil.getPlatformName()).getAbsolutePath());
 		System.setProperty("net.java.games.input.librarypath", System.getProperty("org.lwjgl.librarypath"));
@@ -50,6 +54,8 @@ public class Main implements Game {
 	public void init(GameContainer gc) throws SlickException {
 		gc.setTargetFrameRate(60);
 		gc.setMaximumLogicUpdateInterval(50);
+		gc.getInput().addKeyListener((KeyListener) keyboard);
+		gc.getInput().addMouseListener((MouseListener) mouse);
 		Secede secede = new Secede();
 		System.out.println(secede.getLeavingState().getName());
 	}
