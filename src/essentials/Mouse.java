@@ -4,64 +4,65 @@ import org.newdawn.slick.Input;
 import org.newdawn.slick.MouseListener;
 
 public class Mouse implements MouseListener {
-
-	@Override
+	private boolean acceptingInput = true;
+	private int x;
+	private int y;
+	private int change;
+	public int getX(){
+		return x;
+	}
+	public int getY(){
+		return y;
+	}
+	private void setX(int x){
+		this.x = x;
+	}
+	private void setY(int y){
+		this.y = y;
+	}
 	public void inputEnded() {
-		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
 	public void inputStarted() {
-		// TODO Auto-generated method stub
-		
+		change = 0;
 	}
-
-	@Override
 	public boolean isAcceptingInput() {
-		// TODO Auto-generated method stub
-		return false;
+		return acceptingInput;
 	}
-
-	@Override
+	public void setAcceptingInput(boolean acceptingInput){
+		this.acceptingInput = acceptingInput;
+	}
 	public void setInput(Input input) {
-		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
 	public void mouseClicked(int button, int x, int y, int clickCount) {
-		// TODO Auto-generated method stub
+		
 	}
-
-	@Override
 	public void mouseDragged(int oldX, int oldY, int newX, int newY) {
-		// TODO Auto-generated method stub
-		
+		setX(newX);
+		setY(newY);
 	}
-
-	@Override
-	public void mouseMoved(int oldx, int oldy, int newx, int newy) {
-		// TODO Auto-generated method stub
-		
+	public void mouseMoved(int oldX, int oldY, int newX, int newY) {
+		setX(newX);
+		setY(newY);
 	}
-
-	@Override
 	public void mousePressed(int button, int x, int y) {
-		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
 	public void mouseReleased(int button, int x, int y) {
-		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
 	public void mouseWheelMoved(int change) {
-		// TODO Auto-generated method stub
-		
+		this.change = change;
 	}
-
+	public int getMouseWheelMovement(){
+		return -change;
+//		negative so that moving down moves down on the list
+	}
+	public boolean isPositive(int change){
+		if(change > 0)
+			return true;
+		else
+			return false;
+	}
 }

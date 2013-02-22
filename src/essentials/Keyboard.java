@@ -21,6 +21,7 @@ public class Keyboard implements KeyListener {
 		
 	}
 	public void keyPressed(int keyCode, char c) {
+		
 	}
 	public void keyReleased(int keyCode, char c) {
 		

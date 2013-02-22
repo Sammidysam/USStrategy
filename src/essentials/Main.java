@@ -68,5 +68,7 @@ public class Main implements Game {
 			drawer.setLag(true);
 		else
 			drawer.setLag(false);
+		if(mouse.getMouseWheelMovement() != 0)
+			drawer.setCurrentState(mouse.isPositive(mouse.getMouseWheelMovement()));
 	}
 }
