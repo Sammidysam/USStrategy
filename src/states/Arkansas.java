@@ -5,6 +5,6 @@ public class Arkansas extends State {
 		return "Arkansas";
 	}
 	public int getSecedeProbability(){
-		return 5;
+		return 650;
 	}
 }

@@ -22,9 +22,14 @@ public class Secede {
 					done = true;
 		}
 		for(int i = 0; i < 48; i++)
-			if(leave[i])
-				index = i;
-//		better code will come later
+			if(leave[i]){
+				if(index < 48){
+					if(state[i].getSecedeProbability() > state[index].getSecedeProbability())
+						index = i;
+				}
+				else
+					index = i;
+			}
 		return state[index];
 	}
 }

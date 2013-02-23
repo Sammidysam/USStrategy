@@ -57,7 +57,7 @@ public class Main implements Game {
 		gc.getInput().addKeyListener((KeyListener) keyboard);
 		gc.getInput().addMouseListener((MouseListener) mouse);
 		Secede secede = new Secede();
-		System.out.println(secede.getLeavingState().getName());
+		drawer.setSeceded(secede.getLeavingState().getName());
 	}
 	public void render(GameContainer gc, Graphics g) throws SlickException {
 		drawer.draw(gc, g);
@@ -68,7 +68,5 @@ public class Main implements Game {
 			drawer.setLag(true);
 		else
 			drawer.setLag(false);
-		if(mouse.getMouseWheelMovement() != 0)
-			drawer.setCurrentState(mouse.isPositive(mouse.getMouseWheelMovement()));
 	}
 }

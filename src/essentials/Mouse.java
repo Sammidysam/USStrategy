@@ -56,8 +56,7 @@ public class Mouse implements MouseListener {
 		this.change = change;
 	}
 	public int getMouseWheelMovement(){
-		return -change;
-//		negative so that moving down moves down on the list
+		return change;
 	}
 	public boolean isPositive(int change){
 		if(change > 0)

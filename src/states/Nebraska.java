@@ -5,6 +5,6 @@ public class Nebraska extends State {
 		return "Nebraska";
 	}
 	public int getSecedeProbability(){
-		return 5;
+		return Integer.MAX_VALUE - 225;
 	}
 }

@@ -5,6 +5,6 @@ public class NewYork extends State {
 		return "New York";
 	}
 	public int getSecedeProbability(){
-		return 5;
+		return 500;
 	}
 }
