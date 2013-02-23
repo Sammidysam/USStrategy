@@ -4,7 +4,7 @@ public class Oregon extends State {
 	public String getName(){
 		return "Oregon";
 	}
-	public int getSecedeProbability(){
-		return Integer.MAX_VALUE - 800;
+	protected int getGDPRank(){
+		return 26;
 	}
 }

@@ -11,7 +11,8 @@ public class Drawer {
 	private String seceded = null;
 	public void draw(GameContainer gc, Graphics g){
 		try {
-			StateHelper.getState(seceded).getFlag().draw(0, 0, gc.getWidth(), gc.getHeight());
+			StateHelper.getState(seceded).getFlag().draw(0, 0, gc.getWidth(), gc.getHeight() - (gc.getHeight() / 8));
+			g.drawString(StateHelper.getState(seceded).getName() + " secedes from the union!", gc.getWidth() / 6, gc.getHeight() - (gc.getHeight() / 8));
 		} catch (SlickException e) {
 			e.printStackTrace();
 		}

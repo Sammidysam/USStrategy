@@ -4,7 +4,7 @@ public class Georgia extends State {
 	public String getName(){
 		return "Georgia";
 	}
-	public int getSecedeProbability(){
-		return 550;
+	protected int getGDPRank(){
+		return 11;
 	}
 }

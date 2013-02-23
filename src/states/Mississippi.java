@@ -4,7 +4,7 @@ public class Mississippi extends State {
 	public String getName(){
 		return "Mississippi";
 	}
-	public int getSecedeProbability(){
-		return 500;
+	protected int getGDPRank(){
+		return 35;
 	}
 }

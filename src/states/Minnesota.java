@@ -4,7 +4,7 @@ public class Minnesota extends State {
 	public String getName(){
 		return "Minnesota";
 	}
-	public int getSecedeProbability(){
-		return Integer.MAX_VALUE - 1000;
+	protected int getGDPRank(){
+		return 17;
 	}
 }

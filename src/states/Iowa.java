@@ -4,7 +4,7 @@ public class Iowa extends State {
 	public String getName(){
 		return "Iowa";
 	}
-	public int getSecedeProbability(){
-		return Integer.MAX_VALUE - 700;
+	protected int getGDPRank(){
+		return 30;
 	}
 }

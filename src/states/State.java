@@ -11,6 +11,9 @@ public class State {
 		return new Image("res/flags/" + getName() + ".png");
 	}
 	public int getSecedeProbability(){
-		return Integer.MAX_VALUE;
+		return 50000000 - (48000000 - (getGDPRank() * 1000000));
+	}
+	protected int getGDPRank(){
+		return 0;
 	}
 }

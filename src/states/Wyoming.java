@@ -4,7 +4,7 @@ public class Wyoming extends State {
 	public String getName(){
 		return "Wyoming";
 	}
-	public int getSecedeProbability(){
-		return Integer.MAX_VALUE - 8;
+	protected int getGDPRank(){
+		return 45;
 	}
 }

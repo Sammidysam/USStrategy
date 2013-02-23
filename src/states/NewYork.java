@@ -4,7 +4,7 @@ public class NewYork extends State {
 	public String getName(){
 		return "New York";
 	}
-	public int getSecedeProbability(){
-		return 500;
+	protected int getGDPRank(){
+		return 3;
 	}
 }

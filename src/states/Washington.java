@@ -4,7 +4,7 @@ public class Washington extends State {
 	public String getName(){
 		return "Washington";
 	}
-	public int getSecedeProbability(){
-		return Integer.MAX_VALUE - 1100;
+	protected int getGDPRank(){
+		return 14;
 	}
 }
