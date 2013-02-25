@@ -1,10 +1,10 @@
 package states;
 
 public class ProbabilityFinder {
-	private String[] neededValues = {"GDP", "unemployment rate", "size", "border states"};
-//	maybe more?
-	public ProbabilityFinder(){
-		neededValues[0].length();
-//		useless line to stop Eclipse from bugging me about a warning
+	static int getReadyScale(int gdp, float unemployment, int size, int population, boolean doesBorderCountry){
+		if(doesBorderCountry)
+			return Math.abs((int) ((gdp + size + (population - (population * unemployment))) * 2)) - 1;
+		else
+			return Math.abs((int) (gdp + size + (population - (population * unemployment))));
 	}
 }

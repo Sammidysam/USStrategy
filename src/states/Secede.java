@@ -14,9 +14,11 @@ public class Secede {
 		boolean done = false;
 		int index = 48;
 		while(!done){
-			for(int i = 0; i < 48; i++)
+			for(int i = 0; i < 48; i++){
+				System.out.println(state[i].getName() + " " + state[i].getSecedeProbability());
 				if(rand.nextInt(state[i].getSecedeProbability()) == 0)
 					leave[i] = true;
+			}
 			for(int i = 0; i < 48; i++)
 				if(leave[i])
 					done = true;
