@@ -11,7 +11,7 @@ public class State {
 		return new Image("res/flags/" + getName() + ".png");
 	}
 	public int getSecedeProbability(){
-		return Integer.MAX_VALUE - ProbabilityFinder.getReadyScale(getGDP() * 1000, getUnemploymentRate(), getSize(), getPopulation(), doesBorderForeignCountry());
+		return 100000 - ProbabilityFinder.getReadyScale(getGDP() * 100, getUnemploymentRate(), getSize(), getPopulation(), doesBorderForeignCountry());
 	}
 	protected int getGDP(){
 		return 0;
