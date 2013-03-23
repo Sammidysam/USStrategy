@@ -1,0 +1,4 @@
+Fullscreen:
+false
+Normal Scale:
+50

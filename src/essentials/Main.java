@@ -1,8 +1,6 @@
 package essentials;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 import org.lwjgl.LWJGLUtil;
 
@@ -25,20 +23,13 @@ public class Main implements Game {
 	public static void main(String[] args){
 		System.setProperty("org.lwjgl.librarypath", new File(new File(System.getProperty("user.dir"), "native"), LWJGLUtil.getPlatformName()).getAbsolutePath());
 		System.setProperty("net.java.games.input.librarypath", System.getProperty("org.lwjgl.librarypath"));
-		try {
-			Scanner scanner = new Scanner(new File(System.getProperty("user.dir"), "Options.ini"));
-			scanner.nextLine();
-			fullscreen = Boolean.parseBoolean(scanner.nextLine());
-			System.out.println(fullscreen);
-			scanner.close();
-		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
-		}
+		fullscreen = Option.getRawOption(0) != "" ? Boolean.parseBoolean(Option.getRawOption(0)) : false;
+		System.out.println(fullscreen);
 		try {
 			AppGameContainer agc = new AppGameContainer(new Main());
 			if(fullscreen)
 				agc.setDisplayMode(agc.getScreenWidth(), agc.getScreenHeight(), true);
-			if(!fullscreen)
+			else
 				agc.setDisplayMode((int)(agc.getScreenWidth() * 0.8), (int)(agc.getScreenHeight() * 0.8), false);
 			agc.start();
 		} catch (SlickException e) {
