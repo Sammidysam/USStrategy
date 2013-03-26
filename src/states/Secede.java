@@ -2,6 +2,8 @@ package states;
 
 import java.util.Random;
 
+import essentials.Option;
+
 public class Secede {
 	private State[] state = new State[48];
 	private Random rand = new Random();
@@ -10,6 +12,20 @@ public class Secede {
 			state[i] = StateHelper.getState(i);
 	}
 	public State getLeavingState(){
+		int normalFactor = Option.getRawOption(0) != null ? Integer.parseInt(Option.getRawOption(1)) : 1;
+		int[] timesComeUp = new int[48];
+		for(int i = 0; i < normalFactor; i++)
+			timesComeUp[getOneLeavingState()]++;
+		int maxTimes = Integer.MIN_VALUE;
+		int maxTimesIndex = timesComeUp.length;
+		for(int i = 0; i < timesComeUp.length; i++)
+			if(timesComeUp[i] > maxTimes){
+				maxTimes = timesComeUp[i];
+				maxTimesIndex = i;
+			}
+		return state[maxTimesIndex];
+	}
+	private int getOneLeavingState(){
 		boolean[] leave = new boolean[48];
 		boolean done = false;
 		int index = 48;
@@ -30,6 +46,6 @@ public class Secede {
 				else
 					index = i;
 			}
-		return state[index];
+		return index;
 	}
 }

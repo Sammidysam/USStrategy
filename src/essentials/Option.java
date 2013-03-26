@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Option {
-	public static final File optionsFile = new File(System.getProperty("user.dir"), "Options.ini");
+	public static final File optionsFile = new File(System.getProperty("user.dir"), "Options.txt");
 	private static String[] getOptions(){
 		ArrayList<String> contents = new ArrayList<String>(0);
 		try {
