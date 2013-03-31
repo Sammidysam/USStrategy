@@ -12,12 +12,11 @@ public class Secede {
 			state[i] = StateHelper.getState(i);
 	}
 	public State getLeavingState(){
-		int normalFactor = Option.getRawOption(0) != null ? Integer.parseInt(Option.getRawOption(1)) : 1;
+		int normalFactor = Option.getRawOption(1) != "" ? Integer.parseInt(Option.getRawOption(1)) : 1;
 		int[] timesComeUp = new int[48];
 		for(int i = 0; i < normalFactor; i++)
 			timesComeUp[getOneLeavingState()]++;
-		int maxTimes = Integer.MIN_VALUE;
-		int maxTimesIndex = timesComeUp.length;
+		int maxTimes = Integer.MIN_VALUE, maxTimesIndex = timesComeUp.length;
 		for(int i = 0; i < timesComeUp.length; i++)
 			if(timesComeUp[i] > maxTimes){
 				maxTimes = timesComeUp[i];
