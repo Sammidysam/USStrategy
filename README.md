@@ -13,3 +13,8 @@ No country will have Democrats AND Republicans since at least one will be phased
 Alaska might get pulled in by Canada.
 
 The end!
+
+License
+=======
+
+This game is licensed under the GNU General Public License version 3.  To see the license, visit the file [LICENSE](LICENSE).
